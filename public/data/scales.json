@@ -1,0 +1,37 @@
+{ "name": "C",
+    "scales": [
+        {
+        "id": 1,
+        "name": "Major",
+        "notes": ["C", "D", "E", "F", "G", "A", "B"]
+        },
+        {
+        "id": 2,
+        "name": "Minor",
+        "notes": ["C", "D", "Eb", "F", "G", "Ab", "Bb"]
+        },
+        {
+        "id": 3,
+        "name": "Pentatonic",
+        "notes": ["C", "D", "E", "G", "A"]
+        }
+    ],
+    "name": "D",
+    "scales": [
+        {
+        "id": 1,
+        "name": "Major",
+        "notes": ["D", "E", "F#", "G", "A", "B", "C#"]
+        },
+        {
+        "id": 2,
+        "name": "Minor",
+        "notes": ["D", "E", "F", "G", "A", "Bb", "C"]
+        },
+        {
+        "id": 3,
+        "name": "Pentatonic",
+        "notes": ["D", "E", "F#", "A", "B"]
+        }
+    ]
+}
