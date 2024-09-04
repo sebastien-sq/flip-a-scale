@@ -1,7 +1,10 @@
+import { StartingCardProps } from "@/utils/types";
 import BackfrontCard from "./BackfrontCard";
 
-export default function StartingCard() {
+const StartingCard : React.FC<StartingCardProps> = ({imageUrl}) => {
     return(
-        <BackfrontCard key={1}/>
+        <BackfrontCard key={1} imageUrl={imageUrl}/>
     )
 }
+
+export default StartingCard;
