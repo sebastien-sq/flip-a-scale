@@ -1,5 +1,8 @@
-import exp from "constants";
 
+export interface scaleData {
+    name: string;
+    scales: Scale[];
+}
 export interface Scale {
     id: number;
     name: string;
@@ -24,7 +27,13 @@ export interface BackfrontCardProps extends CardProps  {}
 
 export interface StartingCardProps extends CardProps  {}
 
-export interface scaleData {
-    name: string;
-    scales: Scale[];
+export interface CheckboxContainerProps {
+    className: string;
 }
+export interface CheckboxProps {
+    imageUrl: string;
+}
+
+export interface FlatCheckboxProps extends CheckboxProps{}
+
+export interface SharpCheckboxProps extends CheckboxProps{}

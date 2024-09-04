@@ -10,8 +10,9 @@ import { CardContainerProps, RootNote, Scale } from "../../utils/types";
 
 
 const CardContainer : React.FC<CardContainerProps> = ({className}) =>{
-  // Image for the back of the card
-  const imageBack = "/assets/FlipMe.png";
+  // Images of the cards
+  const imageFront = "/assets/FrontCard.png";
+  const imageBack = "/assets/BackCard.png";
   // States
   const [isFlipped, setIsFlipped] = useState(false);
   const [rootNote, setRootNote] = useState(randomRootNote());
@@ -48,7 +49,7 @@ if(!isClient) return <StartingCard imageUrl={imageBack} />;
         ))}
         
         {/* Front Card */}
-       <FrontCard rootNote={rootNote} scale={scale}/>
+       <FrontCard rootNote={rootNote} scale={scale} imageUrl={imageFront}/>
 
       </div>
     </div>
