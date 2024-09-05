@@ -1,6 +1,7 @@
 
 export interface scaleData {
     name: string;
+    accidental: string;
     scales: Scale[];
 }
 export interface Scale {
@@ -12,9 +13,12 @@ export interface Scale {
 export interface RootNote {
     name: string;
     scales: Scale[];
+    accidental: string;
 }
 export interface CardContainerProps {
     className: string;
+    useFlats: boolean;
+    useSharps: boolean;
 }
 export interface CardProps {
     imageUrl: string;
@@ -29,9 +33,12 @@ export interface StartingCardProps extends CardProps  {}
 
 export interface CheckboxContainerProps {
     className: string;
+    onAccidentalChange: (accidental: {useFlats: boolean, useSharps: boolean}) => void;
 }
 export interface CheckboxProps {
     imageUrl: string;
+    checked: boolean;
+    onChange: (checked: boolean) => void;
 }
 
 export interface FlatCheckboxProps extends CheckboxProps{}

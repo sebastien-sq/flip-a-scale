@@ -1,9 +1,8 @@
-import { Scale, RootNote } from "../../../utils/types";
-import scalesData from "../../../../public/data/scales.json";
+import { Scale, RootNote } from "../types";
 
-export default function getRandomScale(rootNote: RootNote): Scale | undefined {
+export default function getRandomScale(rootNote: RootNote, selectedDatas: RootNote[]): Scale | undefined {
   // Trouver l'objet correspondant à la rootNote dans scalesData
-  const rootNoteData = scalesData.find(item => item.name === rootNote.name);
+  const rootNoteData = selectedDatas.find(item => item.name === rootNote.name);
   
   if (!rootNoteData || !rootNoteData.scales || rootNoteData.scales.length === 0) {
     console.error(`No scales found for root note: ${rootNote.name}`);

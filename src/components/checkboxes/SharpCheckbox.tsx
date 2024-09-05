@@ -1,21 +1,18 @@
 'use client';
 import {SharpCheckboxProps } from "@/utils/types";
-import { useState } from "react";
 import Image from 'next/image';
 
-const SharpCheckbox : React.FC<SharpCheckboxProps> = ({ imageUrl  }) => {
-    const [isChecked, setIsChecked] = useState(false);
+const SharpCheckbox : React.FC<SharpCheckboxProps> = ({ imageUrl, checked, onChange }) => {
 
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      setIsChecked(event.target.checked);
-    };
+
     return (
         <label htmlFor="sharp">
             <input type="checkbox" id="sharp" 
-            checked={isChecked}
-            onChange={handleChange}
+            name="sharp"
+            checked={checked}
+            onChange={(e) => onChange(e.target.checked)}
             />
-            <Image src={imageUrl} height={50} width={50} alt=""/>
+            <Image src={imageUrl} height={50} width={50} alt="sharp"/>
         </label>
     );
 

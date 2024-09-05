@@ -1,21 +1,17 @@
 'use client';
 import {FlatCheckboxProps } from "@/utils/types";
-import { useState } from "react";
 import Image from 'next/image';
 
-const FlatCheckbox : React.FC<FlatCheckboxProps> = ({ imageUrl  }) => {
-    const [isChecked, setIsChecked] = useState(false);
-
-    const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-      setIsChecked(event.target.checked);
-    };
+const FlatCheckbox : React.FC<FlatCheckboxProps> = ({ imageUrl, checked, onChange }) => {
+    
     return (
         <label htmlFor="flat">
             <input type="checkbox" id="flat" 
-            checked={isChecked}
-            onChange={handleChange}
+            name="flat"
+            checked={checked}
+            onChange={(e) => onChange(e.target.checked)}
             />
-                 <Image src={imageUrl} height={50} width={50} alt=""/>
+                 <Image src={imageUrl} height={50} width={50} alt="flat"/>
 
         </label>
     );
