@@ -6,6 +6,7 @@ export default function getRandomScale(rootNote: RootNote, selectedDatas: RootNo
   
   if (!rootNoteData || !rootNoteData.scales || rootNoteData.scales.length === 0) {
     console.error(`No scales found for root note: ${rootNote.name}`);
+    
     return undefined;
   }
 
