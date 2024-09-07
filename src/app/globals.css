@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import '../components/card/Card.css';
+@import '../components/checkboxes/Checkboxes.module.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -28,10 +29,6 @@ body {
     text-wrap: balance;
   }
 }
-
-h1{
-  @apply text-4xl font-bold;
-}
-h2{
-  @apply text-xl font-bold;
+body{
+  min-height: 300px !important;
 }

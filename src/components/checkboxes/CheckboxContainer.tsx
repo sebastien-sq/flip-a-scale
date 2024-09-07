@@ -25,15 +25,15 @@ const CheckboxContainer: React.FC<CheckboxContainerProps> = ({
 
   return (
     <div className={className}>
-      <FlatCheckbox
-        imageUrl={imageFlat}
-        checked={useFlats}
-        onChange={handleFlatChange}
-      />
       <SharpCheckbox
         imageUrl={imageSharp}
         checked={useSharps}
         onChange={handleSharpChange}
+      />
+      <FlatCheckbox
+        imageUrl={imageFlat}
+        checked={useFlats}
+        onChange={handleFlatChange}
       />
     </div>
   );

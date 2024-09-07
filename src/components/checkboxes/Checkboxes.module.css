@@ -1,0 +1,23 @@
+.checkboxLabel {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 1em;
+  }
+  
+  .hiddenCheckbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkboxImage {
+    opacity: 0.4;
+    transition: opacity 0.2s;
+  }
+  
+  .hiddenCheckbox:checked + .checkboxImage {
+    opacity: 1;
+  }
