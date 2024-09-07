@@ -16,7 +16,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-evenly p-24 relative">
       <div className="flex flex-col items-center justify-between ">
         <h1 className="text-4xl font-bold mb-10">Flip a scale ! 🎶</h1>
-        <h2 className="text-2xl">Just tap a card to reveal a random scale, then improvise with it!</h2>
+        <h2 className="text-2xl">Just tap a card to reveal a random scale, then improvise with it !</h2>
       </div>
       <div className="flex flex-col items-center justify-between p-8 ">
         <CardContainer className="m-20 flex flex-col items-center justify-center" useFlats={useFlats} useSharps={useSharps}/>
