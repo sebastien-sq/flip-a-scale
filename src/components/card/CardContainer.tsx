@@ -5,9 +5,8 @@ import BackfrontCard from "./BackfrontCard";
 import FrontCard from "./FrontCard";
 import getRandomRootNote from "@/utils/functions/getRandomRootNote";
 import getRandomScale from "@/utils/functions/getRandomScale";
-import updateAccidentals from "@/utils/functions/updateAccidentals";
-import { useState, useEffect } from "react";
-import { CardContainerProps, RootNote, Scale } from "../../utils/types";
+import { useState } from "react";
+import { CardContainerProps,  Scale } from "@/utils/types";
 
 const CardContainer: React.FC<CardContainerProps> = ({
   className,
