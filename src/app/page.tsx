@@ -28,7 +28,7 @@ export default function Home() {
           <a
             href="www.seawebstudio.com"/>
         </p>
-        <p className="hover:scale-110"><a href="www.github.com/beseb" ><Image src="/assets/github.png" height={50} width={30} alt=''/></a></p>
+        <p className="hover:scale-110"><a href="www.github.com/ThisIsB3SS" ><Image src="/assets/github.png" height={50} width={30} alt=''/></a></p>
             </footer>
       </main>
   );
