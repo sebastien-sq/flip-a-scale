@@ -4,7 +4,7 @@ import orderScale from "./orderScale";
 
 function generateScale(scale: Scale) {
 // Clear the output div first
-const output = document.getElementById('output');
+const output = document.getElementById('output-scale');
 if (output instanceof HTMLElement) {
     output.innerHTML = '';
 }
@@ -12,7 +12,7 @@ if (output instanceof HTMLElement) {
 const { Factory, EasyScore, System } = Vex.Flow;
 
 const vf = new Factory({
-  renderer: { elementId: 'output', width: 500, height: 200 },
+  renderer: { elementId: 'output-scale', width: 300, height: 200 },
 });
 
 const score = vf.EasyScore();

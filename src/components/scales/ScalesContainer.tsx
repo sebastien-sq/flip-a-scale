@@ -1,14 +1,15 @@
 import { ScalesContainerProps } from "@/utils/types";
 
-const ScalesContainer : React.FC<ScalesContainerProps> = ({ datas}) => {
+const ScalesContainer : React.FC<ScalesContainerProps> = () => {
     
     return (
-        <div className={"flex flex-row flex-wrap justify-center"} id="scales-container" >
-            <div id="output">
-            <h4>This is the scale you're playing</h4>
-                   
-            </div>
-        </div>
+        <details className="flex flex-col items-center justify-center mt-10">
+            <summary className="text-2xl font-bold text-center ">Scale</summary>
+
+            <div id="output-scale" className=""></div>
+        
+        </details>
+        
     )
 }
 

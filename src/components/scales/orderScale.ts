@@ -38,9 +38,9 @@ import { Scale } from "@/utils/types";
       
         return `${noteName}${adjustedOctave}`;
       }
+     
       const notesWithOctaves = assignOctaves(scale.notes);      
       const adjustedNotes = notesWithOctaves.map(note => adjustOctave(note));
-        
       return adjustedNotes;
       }
 export default orderScale;

@@ -19,11 +19,12 @@ export default function Home() {
         <h1 className="text-4xl font-bold mb-10">Flip a scale ! 🎶</h1>
         <h2 className="text-2xl">Just tap a card to reveal a random scale, then improvise with it !</h2>
       </div>
-      <div className="flex flex-col items-center justify-between p-8 ">
+      <div className=" flex flex-col items-center justify-between p-8 ">
         <CardContainer className="m-20 flex flex-col items-center justify-center" useFlats={useFlats} useSharps={useSharps}/>
-        <ScalesContainer />
         <CheckboxContainer className="m-10 flex row items-center justify-center" onAccidentalChange={handleAccidentalChange} />
-      </div>
+      
+          <ScalesContainer />
+        </div>
       <footer className="absolute bottom-20 h-20 flex flex-col items-center justify-between">
         <p >
           Made with ❤️ by B3SS ; 
