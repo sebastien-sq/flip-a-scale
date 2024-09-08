@@ -8,7 +8,7 @@ const FrontCard: React.FC<FrontCardProps> = ({ rootNote, scale, imageUrl }) => {
     <Image src={imageUrl} alt="card" height={500} width={400} className="z-0 rounded-md" />
     <h3 className="absolute top-40 left-30 z-50 h-10 font-bold text-5xl text-black">{rootNote.name}</h3>
 
-    {scale && <h4 className="absolute bottom-30 left-30 z-50 h-10 font-bold text-3xl text-black">{scale.name}</h4>}
+    {scale && <h4 className="absolute bottom-30 left-30 z-50 h-10 font-bold text-2xl text-black">{scale.name}</h4>}
     
   </div>)
 }

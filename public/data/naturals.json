@@ -15,8 +15,13 @@
       },
       {
         "id": 3,
-        "name": "Pentatonic",
+        "name": "Pentatonic Major",
         "notes": ["C", "D", "E", "G", "A"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["C", "Eb", "F", "G", "Bb"]
       }
     ]
   },
@@ -36,8 +41,13 @@
       },
       {
         "id": 3,
-        "name": "Pentatonic",
+        "name": "Pentatonic Major",
         "notes": ["D", "E", "F#", "A", "B"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["D", "F", "G", "A", "C"]
       }
     ]
   },
@@ -57,8 +67,13 @@
       },
       {
         "id": 3,
-        "name": "Pentatonic",
+        "name": "Pentatonic Major",
         "notes": ["E", "F#", "G#", "B", "C#"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["E", "G", "A", "B", "D"]
       }
     ]
   },
@@ -78,8 +93,13 @@
       },
       {
         "id": 3,
-        "name": "Pentatonic",
+        "name": "Pentatonic Major",
         "notes": ["F", "G", "A", "C", "D"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["F", "Ab", "Bb", "C", "Eb"]
       }
     ]
   },
@@ -99,8 +119,13 @@
       },
       {
         "id": 3,
-        "name": "Pentatonic",
+        "name": "Pentatonic Major",
         "notes": ["G", "A", "B", "D", "E"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["G", "Bb", "C", "D", "F"]
       }
     ]
   },
@@ -120,8 +145,13 @@
       },
       {
         "id": 3,
-        "name": "Pentatonic",
+        "name": "Pentatonic Major",
         "notes": ["A", "B", "C#", "E", "F#"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["A", "C", "D", "E", "G"]
       }
     ]
   },
@@ -141,8 +171,13 @@
       },
       {
         "id": 3,
-        "name": "Pentatonic",
+        "name": "Pentatonic Major",
         "notes": ["B", "C#", "D#", "F#", "G#"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["B", "D", "E", "F#", "A"]
       }
     ]
   }

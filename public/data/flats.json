@@ -1,107 +1,132 @@
 [
-    {
-      "name": "Db",
-      "accidental": "flat",
-      "scales": [
-        {
-          "id": 1,
-          "name": "Major",
-          "notes": ["Db", "Eb", "F", "Gb", "Ab", "Bb", "C"]
-        },
-        {
-          "id": 2,
-          "name": "Minor",
-          "notes": ["Db", "Eb", "Fb", "Gb", "Ab", "Bbb", "Cb"]
-        },
-        {
-          "id": 3,
-          "name": "Pentatonic",
-          "notes": ["Db", "Eb", "F", "Ab", "Bb"]
-        }
-      ]
-    },
-    {
-      "name": "Eb",
-      "accidental": "flat",
-      "scales": [
-        {
-          "id": 1,
-          "name": "Major",
-          "notes": ["Eb", "F", "G", "Ab", "Bb", "C", "D"]
-        },
-        {
-          "id": 2,
-          "name": "Minor",
-          "notes": ["Eb", "F", "Gb", "Ab", "Bb", "Cb", "Db"]
-        },
-        {
-          "id": 3,
-          "name": "Pentatonic",
-          "notes": ["Eb", "F", "G", "Bb", "C"]
-        }
-      ]
-    },
-    {
-      "name": "Gb",
-      "accidental": "flat",
-      "scales": [
-        {
-          "id": 1,
-          "name": "Major",
-          "notes": ["Gb", "Ab", "Bb", "Cb", "Db", "Eb", "F"]
-        },
-        {
-          "id": 2,
-          "name": "Minor",
-          "notes": ["Gb", "Ab", "Bbb", "Cb", "Db", "Ebb", "Fb"]
-        },
-        {
-          "id": 3,
-          "name": "Pentatonic",
-          "notes": ["Gb", "Ab", "Bb", "Db", "Eb"]
-        }
-      ]
-    },
-    {
-      "name": "Ab",
-      "accidental": "flat",
-      "scales": [
-        {
-          "id": 1,
-          "name": "Major",
-          "notes": ["Ab", "Bb", "C", "Db", "Eb", "F", "G"]
-        },
-        {
-          "id": 2,
-          "name": "Minor",
-          "notes": ["Ab", "Bb", "Cb", "Db", "Eb", "Fb", "Gb"]
-        },
-        {
-          "id": 3,
-          "name": "Pentatonic",
-          "notes": ["Ab", "Bb", "C", "Eb", "F"]
-        }
-      ]
-    },
-    {
-      "name": "Bb",
-      "accidental": "flat",
-      "scales": [
-        {
-          "id": 1,
-          "name": "Major",
-          "notes": ["Bb", "C", "D", "Eb", "F", "G", "A"]
-        },
-        {
-          "id": 2,
-          "name": "Minor",
-          "notes": ["Bb", "C", "Db", "Eb", "F", "Gb", "Ab"]
-        },
-        {
-          "id": 3,
-          "name": "Pentatonic",
-          "notes": ["Bb", "C", "D", "F", "G"]
-        }
-      ]
-    }
-  ]
+  {
+    "name": "Db",
+    "accidental": "flat",
+    "scales": [
+      {
+        "id": 1,
+        "name": "Major",
+        "notes": ["Db", "Eb", "F", "Gb", "Ab", "Bb", "C"]
+      },
+      {
+        "id": 2,
+        "name": "Minor",
+        "notes": ["Db", "Eb", "Fb", "Gb", "Ab", "Bbb", "Cb"]
+      },
+      {
+        "id": 3,
+        "name": "Pentatonic Major",
+        "notes": ["Db", "Eb", "F", "Ab", "Bb"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["Db", "Fb", "Gb", "Ab", "Cb"]
+      }
+    ]
+  },
+  {
+    "name": "Eb",
+    "accidental": "flat",
+    "scales": [
+      {
+        "id": 1,
+        "name": "Major",
+        "notes": ["Eb", "F", "G", "Ab", "Bb", "C", "D"]
+      },
+      {
+        "id": 2,
+        "name": "Minor",
+        "notes": ["Eb", "F", "Gb", "Ab", "Bb", "Cb", "Db"]
+      },
+      {
+        "id": 3,
+        "name": "Pentatonic Major",
+        "notes": ["Eb", "F", "G", "Bb", "C"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["Eb", "Gb", "Ab", "Bb", "Db"]
+      }
+    ]
+  },
+  {
+    "name": "Gb",
+    "accidental": "flat",
+    "scales": [
+      {
+        "id": 1,
+        "name": "Major",
+        "notes": ["Gb", "Ab", "Bb", "Cb", "Db", "Eb", "F"]
+      },
+      {
+        "id": 2,
+        "name": "Minor",
+        "notes": ["Gb", "Ab", "Bbb", "Cb", "Db", "Ebb", "Fb"]
+      },
+      {
+        "id": 3,
+        "name": "Pentatonic Major",
+        "notes": ["Gb", "Ab", "Bb", "Db", "Eb"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["Gb", "Bbb", "Cb", "Db", "Fb"]
+      }
+    ]
+  },
+  {
+    "name": "Ab",
+    "accidental": "flat",
+    "scales": [
+      {
+        "id": 1,
+        "name": "Major",
+        "notes": ["Ab", "Bb", "C", "Db", "Eb", "F", "G"]
+      },
+      {
+        "id": 2,
+        "name": "Minor",
+        "notes": ["Ab", "Bb", "Cb", "Db", "Eb", "Fb", "Gb"]
+      },
+      {
+        "id": 3,
+        "name": "Pentatonic Major",
+        "notes": ["Ab", "Bb", "C", "Eb", "F"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["Ab", "Cb", "Db", "Eb", "Gb"]
+      }
+    ]
+  },
+  {
+    "name": "Bb",
+    "accidental": "flat",
+    "scales": [
+      {
+        "id": 1,
+        "name": "Major",
+        "notes": ["Bb", "C", "D", "Eb", "F", "G", "A"]
+      },
+      {
+        "id": 2,
+        "name": "Minor",
+        "notes": ["Bb", "C", "Db", "Eb", "F", "Gb", "Ab"]
+      },
+      {
+        "id": 3,
+        "name": "Pentatonic Major",
+        "notes": ["Bb", "C", "D", "F", "G"]
+      },
+      {
+        "id": 4,
+        "name": "Pentatonic Minor",
+        "notes": ["Bb", "Db", "Eb", "F", "Ab"]
+      }
+    ]
+  }
+]
