@@ -5,7 +5,7 @@ import BackfrontCard from "./BackfrontCard";
 import FrontCard from "./FrontCard";
 import getRandomRootNote from "@/utils/functions/getRandomRootNote";
 import getRandomScale from "@/utils/functions/getRandomScale";
-import generateScales from "../scales/generateScales";
+import generateScale from "../scales/generateScale";
 import { useState } from "react";
 import { CardContainerProps,  Scale, RootNote } from "@/utils/types";
 
@@ -35,6 +35,7 @@ const CardContainer: React.FC<CardContainerProps> = ({
       setNewRootNote(rootNote);
       const scale = getRandomScale(rootNote);
       setNewScale(scale);
+      generateScale(scale);
     }, 300);
   };
 
