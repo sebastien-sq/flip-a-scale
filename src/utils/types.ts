@@ -48,3 +48,7 @@ export interface CheckboxProps {
 export interface FlatCheckboxProps extends CheckboxProps {}
 
 export interface SharpCheckboxProps extends CheckboxProps {}
+
+export interface ScalesContainerProps {
+  datas?: scaleData[];
+}

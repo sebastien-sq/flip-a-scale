@@ -1,6 +1,7 @@
 'use client';
 import CardContainer from "../components/card/CardContainer";
 import CheckboxContainer from "@/components/checkboxes/CheckboxContainer";
+import ScalesContainer from "@/components/scales/ScalesContainer";
 import Image from 'next/image';
 import { useState } from "react";
 
@@ -20,6 +21,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col items-center justify-between p-8 ">
         <CardContainer className="m-20 flex flex-col items-center justify-center" useFlats={useFlats} useSharps={useSharps}/>
+        <ScalesContainer />
         <CheckboxContainer className="m-10 flex row items-center justify-center" onAccidentalChange={handleAccidentalChange} />
       </div>
       <footer className="absolute bottom-20 h-20 flex flex-col items-center justify-between">
@@ -28,7 +30,7 @@ export default function Home() {
           <a
             href="www.seawebstudio.com"/>
         </p>
-        <p className="hover:scale-110"><a href="https://github.com/ThisIsB3SS" ><Image src="/assets/github.png" height={50} width={30} alt=''/></a></p>
+        <p className="hover:scale-110"><a href="https://github.com/ThisIsB3SS" ><Image src="/assets/github.png" height={50} width={30} alt='Developper"s github link'/></a></p>
             </footer>
       </main>
   );

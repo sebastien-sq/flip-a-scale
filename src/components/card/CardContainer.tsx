@@ -5,8 +5,9 @@ import BackfrontCard from "./BackfrontCard";
 import FrontCard from "./FrontCard";
 import getRandomRootNote from "@/utils/functions/getRandomRootNote";
 import getRandomScale from "@/utils/functions/getRandomScale";
+import generateScales from "../scales/generateScales";
 import { useState } from "react";
-import { CardContainerProps,  Scale } from "@/utils/types";
+import { CardContainerProps,  Scale, RootNote } from "@/utils/types";
 
 const CardContainer: React.FC<CardContainerProps> = ({
   className,
@@ -19,12 +20,8 @@ const CardContainer: React.FC<CardContainerProps> = ({
   // States
   const [isStarting, setIsStarting] = useState(true);
   const [isFlipped, setIsFlipped] = useState(false);
-  const [newRootNote, setNewRootNote] = useState(
-    getRandomRootNote(useFlats, useSharps)
-  );
-  const [scale, setScale] = useState<Scale | undefined>(undefined);
-
-
+  const [newRootNote, setNewRootNote] = useState<RootNote>();
+  const [newScale, setNewScale] = useState<Scale>();
 
   // Function to flip the card
   const flipCard = () => {
@@ -34,10 +31,10 @@ const CardContainer: React.FC<CardContainerProps> = ({
     setIsStarting(false);
     // setTimeout to avoid the root note to appear before the card is flipped
     setTimeout(() => {
-      setNewRootNote(getRandomRootNote(useFlats, useSharps));
-      setScale(
-        getRandomScale(newRootNote.randomRootNote, newRootNote.notesDatas)
-      );
+      const rootNote = getRandomRootNote(useFlats, useSharps);
+      setNewRootNote(rootNote);
+      const scale = getRandomScale(rootNote);
+      setNewScale(scale);
     }, 300);
   };
 
@@ -54,10 +51,10 @@ const CardContainer: React.FC<CardContainerProps> = ({
               {/* Starting card with opacity 1 if isStarting is true, 0 otherwise, to avoid the card to disappear when the game starts */}
               <StartingCard imageUrl={imageBack} style={{opacity: isStarting ? 1 : 0}} />
               <BackfrontCard  imageUrl={imageBack} />
-            {scale && (
+            {newScale && newRootNote && (
               <FrontCard
-                rootNote={newRootNote.randomRootNote}
-                scale={scale}
+                rootNote={newRootNote}
+                scale={newScale}
                 imageUrl={imageFront}
               />
             )}
