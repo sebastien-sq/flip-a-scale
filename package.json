@@ -11,14 +11,15 @@
   "dependencies": {
     "next": "^14.2.13",
     "react": "^19",
-    "react-dom": "^18",
+    "react-dom": "^19",
+
     "vexflow": "^4.2.5"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
     "eslint-config-next": "14.2.7",
     "postcss": "^8",
     "prettier": "^3.3.3",
